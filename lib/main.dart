@@ -14,7 +14,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       home: Scaffold(
-        appBar: AppBar(title: const Text('Design System Example'),),
+        appBar: AppBar(
+          backgroundColor: AppColors.surface,
+          title: const Center(child: Text('Design System Example')),),
         body: Center(
           child: CustomButton(label: 'Press Me', onPressed: () {}),
         ),
